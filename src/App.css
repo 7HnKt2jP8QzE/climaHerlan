@@ -5,6 +5,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     justify-items: center;
+    text-align: center;
 }
 
 .inicio{
@@ -33,5 +34,5 @@ body{
 
 .logotipo{
     height: 60px;
-    width: 95px;
+    width: 150px;
 }
