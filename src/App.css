@@ -19,3 +19,19 @@ body{
 .uno{
     margin-top: 20px;
 }
+
+
+.lista{
+    display: inline;
+    margin: 5px;
+}
+
+.logotipos{
+    height: 60px;
+    width: 60px;
+}
+
+.logotipo{
+    height: 60px;
+    width: 95px;
+}
