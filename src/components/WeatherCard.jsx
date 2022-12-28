@@ -42,8 +42,8 @@ const WeatherCard = ({ weather, temperature }) => {
     <div className="redes">
         <ul>
           <li className='lista'><a href="https://www.facebook.com/herlanbenavidesp" target="_blank"><img className='logotipos' src="src\imagenes\face.png" alt="" /></a></li>  
-          <li className='lista'><a href="https://www.instagram.com/herlanbenavidescr" target="_blank"><img className='logotipos' src="src\imagenes\Ins.png" alt="" /></a></li>  
-          <li className='lista'><a href="https://www.linkedin.com/in/herlan-benavides/" target="_blank"><img className='logotipo' src="src\imagenes\Lin.png" alt="" /></a></li>  
+          <li className='lista'><a href="https://www.instagram.com/herlanbenavidescr" target="_blank"><img className='logotipos' src="src\imagenes\ins.png" alt="" /></a></li>  
+          <li className='lista'><a href="https://www.linkedin.com/in/herlan-benavides/" target="_blank"><img className='logotipo' src="src\imagenes\lin.png" alt="" /></a></li>  
         </ul>
       </div>
     </div>
