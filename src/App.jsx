@@ -8,6 +8,8 @@ function App() {
 
   const [coords, setCoords] = useState()
   const [weather, setWeather] = useState()
+  const [temperature, setTemperature] = useState()
+  const [iscelsius, setIscelsius] = useState(true)
 
   useEffect(()=>{
     const success = (pos) => {
@@ -30,7 +32,13 @@ useEffect(()=>{
     const APIKEY = '1f883653ebbc11a3ba0c45670515dd87'
     const URL =`https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${APIKEY}`
     axios.get(URL)
-    .then(res => setWeather(res.data))
+    .then(res =>{ 
+      const celsius = (res.data.main.temp -273.15).toFixed(1)
+      const farenheit = ((celsius*9/5)+35).toFixed(1)
+      setTemperature({celsius, farenheit})
+      setWeather(res.data)
+
+    })
     .catch(err=> console.log(err))
 
   }
@@ -41,7 +49,7 @@ console.log(weather)
 
   return (
     <div className="App">
-      <WeatherCard weather={weather}/>
+      <WeatherCard weather={weather} temperature={temperature}/>
 
     </div>
   )
